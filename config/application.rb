@@ -4,7 +4,7 @@ require 'active_record'
 require 'logger'
 require_relative '../app/models/todo'
 require_relative '../app/views/interface'
-
+# require_relative '../app/controllers/todo_controller.rb'
 
 APP_ROOT = Pathname.new(File.expand_path(File.join(File.dirname(__FILE__), '..')))
 APP_NAME = APP_ROOT.basename.to_s

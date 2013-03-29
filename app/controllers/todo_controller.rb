@@ -1,6 +1,4 @@
 require_relative "../../config/application"
-require_relative "../views/interface"
-
 
 class TodoController
   def self.parse_user_response(input)
