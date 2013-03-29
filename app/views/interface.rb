@@ -10,7 +10,7 @@ class Interface
 
   def self.show_tasks(todo_list)
     todo_list.each do |todo|
-      puts "#{todo.task | todo.completed ? "completed" : "do it damn it.." }"
+      puts "#{todo.id}. #{todo.task} | #{todo.completed ? 'completed' : 'do it damn it..'}"
     end
   end
 

@@ -1,9 +1,14 @@
+require_relative "../../config/application"
+require_relative "../views/interface"
+
+
 class TodoController
-  def parse_user_response(input)
+  def self.parse_user_response(input)
     command = input.shift.downcase if input[0]
     details = input.join(" ")
 
     if command == "list"
+      puts "here"
       return Interface.show_tasks(Todo.all)
 
     elsif command == "add"
@@ -22,5 +27,7 @@ class TodoController
       return Interface.error_messages
     end
   end
-
 end
+
+
+TodoController.parse_user_response(ARGV)
