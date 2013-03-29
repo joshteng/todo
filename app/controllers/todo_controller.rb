@@ -6,7 +6,6 @@ class TodoController
     details = input.join(" ")
 
     if command == "list"
-      puts "here"
       return Interface.show_tasks(Todo.all)
 
     elsif command == "add"
