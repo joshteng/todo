@@ -3,6 +3,9 @@ require 'sqlite3'
 require 'active_record'
 require 'logger'
 require_relative '../app/models/todo'
+require_relative '../app/controllers/todo_controller'
+require_relative '../app/views/interface'
+
 
 APP_ROOT = Pathname.new(File.expand_path(File.join(File.dirname(__FILE__), '..')))
 
